@@ -1,0 +1,17 @@
+/* home */
+.nav-red{
+    background-color: #f0141e;
+    margin-bottom: 0;
+}
+
+.container-bar{
+    background-color:black;
+}
+
+.container-bar >ul>li {
+    display: inline-block;
+}
+
+.container-bar > ul > li >a {
+    color:white !important;
+}
