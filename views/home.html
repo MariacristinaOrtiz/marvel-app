@@ -105,23 +105,15 @@
           <div class="input-group">
             <div class="input-group-btn">
               <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="filtros">
                   Filtros
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a href="#">Título</a>
-                  </li>
-                  <li>
-                    <a href="#">Año de Estreno</a>
-                  </li>
-                  <li>
-                    <a href="">Nombre de Director</a>
-                  </li>
-                  <li>
-                    <a href="">Actores</a>
-                  </li>
+                  <li id="titulo">Título</li>
+                  <li id="estreno">Año de Estreno</li>
+                  <li id="director">Nombre de Director</li>
+                  <li id="actores">Actores</li>
                 </ul>
               </div>
             </div>
@@ -185,6 +177,7 @@
   </main>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/bootstrap/js/bootstrap.js"></script>
-  <!-- <script src="js/app.js"></script> -->
+  <script src="../js/home.js"></script>
+  <script src="../js/data.js"></script>
 </body>
 </html>
