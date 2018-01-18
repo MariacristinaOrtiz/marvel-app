@@ -19,13 +19,21 @@ $(document).ready(function() {
     localStorage.filtro = 'Actors';
   });
 
-  console.log(data[0]['Title']);
-  console.log(data.length);
+  // console.log(data[0]['Title']);
+  // console.log(data.length);
 
   for (var i = 0; i < data.length ; i++) {
-    if (data[i]['Title'].indexOf('Thor') !== -1 ) {
+    if (data[i]['Title'].indexOf('Thor') !== -1) {
       console.log(data[i]);
     }
   }
+
+  $('#search').click(function() {
+    if ($('#text-search').val().length === 0) {
+      alert('ingrese busqueda');
+    } else {
+      console.log($('#text-search').val());
+    }
+  });
 });
 
