@@ -58,8 +58,8 @@
           <input type="checkbox"> Estoy de acuerdo con los <a href="">Términos y servicos.</a>
         </label>
       </div>
-      <button id="key"  class="btn btn-default">Registrarme</button>
-       <span>¿Tienes una cuenta? </span><a href="" data-toggle="modal" data-target="#myModal">Iniciar sesión</a>
+      <button type="button" class="btn btn-default">Registrarme</button>
+       <span>¿Tienes una cuenta? </span><a data-toggle="modal" data-target="#myModal">Iniciar sesión</a>
     </form>
   </div>
   <!-- Modal -->
@@ -82,7 +82,7 @@
             </div>
             <button type="button" class="btn btn-default">Ingresar</button>            
             <button type="button" class="btn btn-default" id="login">Ingresar con Google</button>            
-            <span>¿Olvidaste tu contraseña? </span><a data-toggle="modal" data-target="#myModal">Haz click aquí.</a>            
+            <span>¿Olvidaste tu contraseña? </span><a>Haz click aquí.</a>            
           </div>
 
         <div class="modal-footer">
@@ -95,19 +95,20 @@
   <script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="../js/login.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDlW74xczq0NNrtQ98_BNn0ZOzSa2laql4",
-      authDomain: "marvel-fans.firebaseapp.com",
-      databaseURL: "https://marvel-fans.firebaseio.com",
-      projectId: "marvel-fans",
-      storageBucket: "marvel-fans.appspot.com",
-      messagingSenderId: "369036190237"
-    };
-    firebase.initializeApp(config);
-  </script> 
+  
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDlW74xczq0NNrtQ98_BNn0ZOzSa2laql4",
+    authDomain: "marvel-fans.firebaseapp.com",
+    databaseURL: "https://marvel-fans.firebaseio.com",
+    projectId: "marvel-fans",
+    storageBucket: "marvel-fans.appspot.com",
+    messagingSenderId: "369036190237"
+  };
+  firebase.initializeApp(config);
+</script> 
 </body>
 
 </html>
