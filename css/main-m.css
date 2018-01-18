@@ -1,0 +1,89 @@
+/*SETEAR NUESTROS ARCHIVOS: SEA IGUAL PARA TODOS LOS NAVEGADORES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+background:rgb(0, 0, 0)
+
+}
+/*  ...ESTILOS REUTILIZABLES...*/
+.color-header {
+  background-color: rgb(181, 15, 22);
+}
+.put {
+  outline: 1px solid red;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* ESTILOS AL HEADER*/
+.figure-logo {
+  width: 42%;
+}
+.nav-tabs li a {
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+}
+.nav-tabs li a:focus, .nav-tabs li a:hover  {
+  background-color: #000;
+}
+.list-dropdown {
+  background-color: rgb(220, 220, 220);
+}
+.list-dropdown li a {
+  color: #000;
+}
+.nav .open>a:focus, .nav .open>a:hover {
+  background-color: #000;
+}
+/* ESTILOS A FIRST SECTION*/
+.div-awards img {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.div-awards {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.user li span {
+  color: #fff;
+}
+/* ESTILOS A SECOND SECTION*/
+.second-section-list {
+  margin-top: 5rem;
+}
+.div-list {
+  border: 3px solid grey;
+  background-color:  rgb(250, 250, 250);
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 25vh;
+}
+.btn {
+  background-color: #000;
+}
+/* ESTILOS A THIRD SECTION*/
+.third-section-ratings{
+margin-top: 3rem;
+}
+.div-ratings {
+  border: 3px solid grey;
+  background-color:  rgb(250, 250, 250);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.content-ratings {
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1rem;
+  background-color: rgb(240, 240, 240);
+  margin-top: 2rem;
+  height: 20vh
+}
+.content-ratings p {
+  margin-top: 1rem;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marvel Fans</title>
+  <!--Añadiendo color a la barra de navegador que se verá desde versión mobile-->
+  <meta name="theme-color" content="#3eb060"/>
+  <link rel="icon" type="image/png" href="../assets/img/logomodel.png">
+  <!--Import fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main-m.css">
+</head>
+<body>
+  <header class="navbar-fi">
+    <div class="container-fluid color-header">
+      <div class="row">
+        <div class="col-xs-12 flex">
+         <figure class="figure-logo"><a href=""><img class="img-responsive" src="../assets/img/logomodel.png" alt="model"></a></figure>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav nav-tabs navbar-inverse">
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Nombre de usuario <span class="caret"></span>
+          </a>
+          <!-- lista desplegable-->
+          <ul class="dropdown-menu list-dropdown">
+            <li><a  href="#">Action</a></li>
+            <li><a href="#">Another</a></li>
+            <li><a href="#">Something</a></li>
+            <li><a href="#">Something</a></li>
+          </ul>
+       </li>
+       <li><a href="#">Noticias Top</a></li>
+       <li><a href="#">Eventos</a></li>
+     </ul>
+    </nav>
+  </header>
+  <section class="first-section-profile">
+    <div class="container-fluid">
+      <div class="row flex">
+        <div class="col-xs-offset-9 col-xs-3 div-awards">
+          <img src="../assets/img/medalla1.jpg" alt="" class="img-reponive col-xs-6 img-circle">
+          <img src="../assets/img/medalla2.jpg" alt="" class="img-responsive col-xs-6 img-circle">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <figure class="col-xs-4"><img src="../assets/img/usuariomodel.png" alt="" class="img-responsive img-circle"></figure>
+          <div class="user col-xs-8">
+            <br>
+            <li class="list-unstyled text-center" id="username-home"><span><strong>Nombre de usuario</strong></span></li>
+            <li class="list-unstyled text-center" id="email-home"><span><strong>Correo</strong></span></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="second-section-list">
+    <div class="container color">
+      <div class="row flex">
+        <div class="col-xs-11 div-list">
+          <div class="col-xs-8 list-group-item" contenteditable="true"><strong>TU LISTA</strong></div>
+          <div class="col-xs-4"><button type="button" class="btn btn-primary">Editar</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="third-section-ratings">
+    <div class="container-fluid color">
+      <div class="row flex">
+        <div class="col-xs-11 div-ratings">
+          <div class="text-center"><strong>Tus calificaciones y comentarios</strong></div>
+          <div class="hidden">
+            <p class="text-center"><strong>TUS CALIFICACIONES Y COMENTARIOS</strong></p>
+              <div class="content-ratings">
+                <img src="" alt="">
+                <p class="col-xs-8"><strong>TíTULO (AÑO)</strong></p>
+                <div class="col-xs-4"><h6>Calificacion</h6><p>Estrellita</p></div>
+                <p class="col-xs-12">Comentarios hechos</p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Vínculo de archivos js-->
+  <script type="text/javascript" src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="../js/profileView.js"></script>
+</body>
+</html>
