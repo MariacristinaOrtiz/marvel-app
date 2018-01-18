@@ -20,15 +20,6 @@ $(document).ready(function() {
     // localStorage.filtro = 'Actors';
   });
 
-  // console.log(data[0]['Title']);
-  // console.log(data.length);
-
-  // for (var i = 0; i < data.length ; i++) {
-  //   if (data[i]['Title'].indexOf('Captain') !== -1) {
-  //     console.log(data[i]);
-  //   }
-  // }
-
   $('#search').click(function() {
     if ($('#text-search').val().length === 0 || $('#filtros').html() === 'Filtros<span class="caret"></span>') {
       alert('Ingrese búsqueda y/o filtro de búsqueda');
@@ -46,18 +37,13 @@ $(document).ready(function() {
     if ($('#filtros').html() === 'Título <span class="caret"></span>') {
       for (var i = 0; i < data.length; i++) {
         if (data[i]['Title'].indexOf(buscar) !== -1) {
+          console.log(data[i]);
           var appen = '<div class="row">' +
-                       '<div class = "col-xs-6">' +
-                          '<img src="_img_peli_" class = "img-pelis">' +
-                       '</div>' +
-                       '<div class="col-xs-6">' +
-                      '<p class="title-pelis">_nombre_pelicula_</p>' +
-                      '<p>Año: _ano_</p>' +
-                      '<p>Rating: _rating_</p>' +
-                      '<p>Duración: _duracion_</p>' +
+                       '<div class="col-xs-12 center">' +
+                         '<img src="_img_peli_" class = "img-pelis" data-toggle="modal" data-target="#click-pelicula" alt="">' +
                       '</div>' +
                     '</div>';
-          var appenReplace = appen.replace('_nombre_pelicula_', data[i]['Title']).replace('_img_peli_',data[i]['Poster']).replace('_ano_',data[i]['Year']).replace('_rating_',data[i]['Ratings'][1]['Value']);
+          var appenReplace = appen.replace('_nombre_pelicula_', data[i]['Title']).replace('_img_peli_',data[i]['Poster']);
           containerPelis.append(appenReplace);          
         }
       }

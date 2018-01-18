@@ -1,4 +1,4 @@
-var new = [
+var next = [
   {
     "Title": "Black Panther",
     "Year": "2018",
