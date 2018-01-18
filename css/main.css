@@ -117,3 +117,11 @@
 .dropdown-menu > li{
     margin-left: 10px;
 }
+
+.title-pelis{
+    font-size: 1.7rem;
+}
+
+.img-pelis{
+    width: 100%;
+}
