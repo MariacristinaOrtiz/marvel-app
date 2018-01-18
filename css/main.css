@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.vw100 {
+    width: 100vw;
+}
+
+.bg-logo {
+    background-image: url("../assets/images/logomodel.png");
+    background-position: center center;
+		background-size: cover;
+}
+html,body {
+	height:100vh;
+}
+.carousel,.item,.active {
+	height:100vh;
+}
+.carousel-inner {
+	height:100vh;
+}
+.full-screen {
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.size {
+	height: 10vh;
+	width: 10vh;
+}
