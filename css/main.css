@@ -19,7 +19,7 @@
 }
 
 .redes{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 0;
     display: flex;
     justify-content: space-around;
@@ -48,4 +48,8 @@
 .fa-youtube-play {
     background-color: #ff0000;
     padding: 10px;
+}
+
+.img-1 {
+    height: 250px;
 }
