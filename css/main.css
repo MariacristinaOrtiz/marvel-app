@@ -117,3 +117,9 @@
 .dropdown-menu > li{
     margin-left: 10px;
 }
+.img-marg{
+  margin-top: -10px;
+}
+.carousel-inner>.item>img {
+  width: 100%;
+}
