@@ -6,6 +6,8 @@
 
 .container-bar{
     background-color:black;
+    display: flex;
+    justify-content: space-around;
 }
 
 .container-bar >ul>li {
@@ -14,4 +16,36 @@
 
 .container-bar > ul > li >a {
     color:white !important;
+}
+
+.redes{
+    margin-top: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.redes > li{
+    display: inline-block;
+}
+
+.redes > li > a > i {
+    color:#ffff;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.fa-facebook{
+    background-color: #4267b2;
+    padding: 10px 15px;
+}
+
+.fa-twitter {
+    background-color: #1da1f2;
+    padding: 10px;
+}
+
+.fa-youtube-play {
+    background-color: #ff0000;
+    padding: 10px;
 }
