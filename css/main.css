@@ -134,8 +134,22 @@
 
 .img-marg{
     margin-top: -10px;
-   }
-   .carousel-inner>.item>img {
-    width: 100%;
-   }
+}
 
+.carousel-inner>.item>img {
+    width: 100%;
+}
+
+.fecha {
+    color:#ffd31a;
+    text-align: center;
+}
+
+.margin-to {
+    margin-top: 30px;
+}
+
+.estreno {
+    color: #1da1f2;
+    text-align: center;
+}

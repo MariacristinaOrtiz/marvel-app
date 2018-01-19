@@ -2,22 +2,18 @@ $(document).ready(function() {
   var containerPelis = $('#container-pelis');
   $('#titulo').click(function() {
     $('#filtros').html('Título <span class="caret"></span>');
-    // localStorage.filtro = 'Title';
   });
 
   $('#estreno').click(function() {
     $('#filtros').html('Año de Estreno <span class="caret"></span>');
-    // localStorage.filtro = 'Year';
   });
 
   $('#director').click(function() {
     $('#filtros').html('Nombre de Director <span class="caret"></span>');
-    // localStorage.filtro = 'Director';
   });
 
   $('#actores').click(function() {
     $('#filtros').html('Actores <span class="caret"></span>');
-    // localStorage.filtro = 'Actors';
   });
 
   $('#search').click(function() {
@@ -25,7 +21,6 @@ $(document).ready(function() {
       alert('Ingrese búsqueda y/o filtro de búsqueda');
       $('#text-search').val(' ');
     } else {
-      // console.log($('#filtros').text());
       buscar();
     }
   });
