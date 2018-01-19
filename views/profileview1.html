@@ -64,8 +64,16 @@
     <div class="container color">
       <div class="row flex">
         <div class="col-xs-11 div-list">
-          <div id="your-list" class="col-xs-8 list-group-item tittle-list" contenteditable="true"><strong>TU LISTA</strong></div>
-          <div class="col-xs-4"><button type="button" class="btn btn-primary">Editar</button></div>
+          <div id="your-list" class="col-xs-8 list-group-item tittle-list" contenteditable = 'false'><strong>TU LISTA</strong></div>
+          <div class="col-xs-4"><button id="button-edit" type="button" class="btn btn-editar btn-primary">Editar</button></div>
+          <!-- DIV CONTAINER LIST-->
+          <div id="content-list"class="content-list col-xs-12">
+            <div class="list row">
+              <p class="col-xs-6">Tittle</p>
+              <p class="col-xs-6 text-right"><button class="btn btn-editar btn-xs"><span class="glyphicon glyphicon-trash"aria-hidden="true"></span></button><button type="button" class="btn btn-primary btn-color btn-xs">Visto</button></p>
+              <figure class="col-xs-12"><img src="" alt=""></figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>
