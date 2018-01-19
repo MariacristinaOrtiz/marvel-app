@@ -19,6 +19,9 @@ background:rgb(0, 0, 0)
   display: flex;
   justify-content: center;
 }
+.inline-block {
+  display: inline-block;
+}
 
 /* ESTILOS AL HEADER*/
 .figure-logo {
@@ -47,15 +50,15 @@ background:rgb(0, 0, 0)
   padding-right: 0px;
 }
 .div-awards {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.user li span {
+.user li span, .user li h6 {
   color: #fff;
 }
 /* ESTILOS A SECOND SECTION*/
 .second-section-list {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .div-list {
   border: 3px solid grey;
@@ -66,6 +69,10 @@ background:rgb(0, 0, 0)
 }
 .btn {
   background-color: #000;
+}
+.tittle-list {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 /* ESTILOS A THIRD SECTION*/
 .third-section-ratings{

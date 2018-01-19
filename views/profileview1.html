@@ -26,19 +26,16 @@
     <nav>
       <ul class="nav nav-tabs navbar-inverse">
         <li role="presentation" class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            Nombre de usuario <span class="caret"></span>
+          <a id="username"class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+             <p class="inline-block">Usuario</p><span class="caret"></span>
           </a>
           <!-- lista desplegable-->
           <ul class="dropdown-menu list-dropdown">
-            <li><a  href="#">Action</a></li>
-            <li><a href="#">Another</a></li>
-            <li><a href="#">Something</a></li>
-            <li><a href="#">Something</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
           </ul>
        </li>
        <li><a href="#">Noticias Top</a></li>
-       <li><a href="#">Eventos</a></li>
+       <li><a href="#">Calendario</a></li>
      </ul>
     </nav>
   </header>
@@ -52,11 +49,12 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <figure class="col-xs-4"><img src="../assets/img/usuariomodel.png" alt="" class="img-responsive img-circle"></figure>
-          <div class="user col-xs-8">
+          <figure class="col-xs-5"><img id="img-profile" src="../assets/img/usuariomodel.png" alt="" class="img-responsive img-circle"></figure>
+          <div class="user col-xs-7">
             <br>
-            <li class="list-unstyled text-center" id="username-home"><span><strong>Nombre de usuario</strong></span></li>
-            <li class="list-unstyled text-center" id="email-home"><span><strong>Correo</strong></span></li>
+            <br>
+            <li class="list-unstyled text-center col-xs-12" id="username-home"><span><strong>Nombre de usuario</strong></span></li>
+            <li class="list-unstyled text-center col-xs-12" id="email-home"><h6><strong>Correo</strong></h6></li>
           </div>
         </div>
       </div>
@@ -66,7 +64,7 @@
     <div class="container color">
       <div class="row flex">
         <div class="col-xs-11 div-list">
-          <div class="col-xs-8 list-group-item" contenteditable="true"><strong>TU LISTA</strong></div>
+          <div id="your-list" class="col-xs-8 list-group-item tittle-list" contenteditable="true"><strong>TU LISTA</strong></div>
           <div class="col-xs-4"><button type="button" class="btn btn-primary">Editar</button></div>
         </div>
       </div>
@@ -96,5 +94,18 @@
   <script type="text/javascript" src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="../js/profileView.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDlW74xczq0NNrtQ98_BNn0ZOzSa2laql4",
+    authDomain: "marvel-fans.firebaseapp.com",
+    databaseURL: "https://marvel-fans.firebaseio.com",
+    projectId: "marvel-fans",
+    storageBucket: "marvel-fans.appspot.com",
+    messagingSenderId: "369036190237"
+  };
+  firebase.initializeApp(config);
+  </script>
 </body>
 </html>
