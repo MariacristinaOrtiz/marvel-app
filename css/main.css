@@ -1,3 +1,165 @@
+<<<<<<< HEAD
 #calendar{
   max-width: 100%;
 }
+=======
+/* home */
+*{
+    font-family: 'Righteous', cursive;
+}
+
+.nav-red{
+    background-color: #b50f16;
+    margin-bottom: 0;
+}
+
+.container-bar{
+    background-color:black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-bar >ul>li {
+    display: inline-block;
+}
+
+.container-bar > ul > li >a {
+    color:white !important;
+    font-size: 1.5rem;
+}
+
+.redes{
+    margin-top: 10px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.redes > li{
+    display: inline-block;
+}
+
+.redes > li > a > i {
+    color:#ffff;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.fa-facebook{
+    background-color: #4267b2;
+    padding: 10px 15px;
+}
+
+.fa-twitter {
+    background-color: #1da1f2;
+    padding: 10px;
+}
+
+.fa-youtube-play {
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+.img-1 {
+    height: 250px;
+}
+
+.container-estrenos{
+    margin-top: 25px;
+    background-color: black;
+}
+
+.img-estrenos {
+    width: 100%;
+}
+
+.title-estrenos, .title-destacados {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+}
+
+.title-estrenos{
+  color: #f0141e;
+}
+
+.title-destacados{
+    color:#134e7a;
+}
+.container-destacados {
+    background-color: #222222;
+
+}
+
+.logo {
+    width: 120px;
+    height: 100px;;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.list-estrenos{
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+
+}
+
+.puntuacion {
+    color:#ffc001;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.fuente{
+    color: #ff0000;
+    font-size: 10px;
+    text-align: center;
+}
+
+.dropdown-menu > li{
+    margin-left: 10px;
+}
+
+.title-pelis{
+    font-size: 1.7rem;
+}
+
+.img-pelis{
+    width: 100%;
+    height: 60%;
+    margin: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.img-marg{
+    margin-top: -10px;
+}
+
+.carousel-inner>.item>img {
+    width: 100%;
+}
+
+.fecha {
+    color:#ffd31a;
+    text-align: center;
+}
+
+.margin-to {
+    margin-top: 30px;
+}
+
+.estreno {
+    color: #1da1f2;
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+>>>>>>> 3bf95acba098b1ee671dfad0fab8bf8d133f84cc
