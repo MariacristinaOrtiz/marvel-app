@@ -1,4 +1,15 @@
 $(document).ready(function() {
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDlW74xczq0NNrtQ98_BNn0ZOzSa2laql4",
+    authDomain: "marvel-fans.firebaseapp.com",
+    databaseURL: "https://marvel-fans.firebaseio.com",
+    projectId: "marvel-fans",
+    storageBucket: "marvel-fans.appspot.com",
+    messagingSenderId: "369036190237"
+  };
+  firebase.initializeApp(config);
+  
   var containerPelis = $('#container-pelis');
   $('#titulo').click(function() {
     $('#filtros').html('Título <span class="caret"></span>');
