@@ -10,7 +10,6 @@ $(document).ready(function() {
     editable: true,
 
     weekMode: 'liquid',
-    url:'#',
     height:calHeight,
     contentHeight:calHeight,
     events: [
