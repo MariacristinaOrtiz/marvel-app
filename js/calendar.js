@@ -8,7 +8,6 @@ $(document).ready(function() {
                right: 'month,basicWeek,basicDay'
            },
     editable: true,
-
     weekMode: 'liquid',
     height:calHeight,
     contentHeight:calHeight,
