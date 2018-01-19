@@ -9,6 +9,13 @@ $(document).ready(function() {
     messagingSenderId: "369036190237"
   };
   firebase.initializeApp(config);
+
+  var dbRef = firebase.database().ref('usuarios');
+  var dbRefUsu = dbRef.child('shCJTaLhHQWpO9PDXKqqeqc5ZkC3');
+  dbRefUsu.on('value', function(snap) {
+    // console.log(snap.val()['nombre']);
+    $('#usuario').text(snap.val()['nombre']);
+  });
   
   var containerPelis = $('#container-pelis');
   $('#titulo').click(function() {
@@ -68,6 +75,7 @@ $(document).ready(function() {
           $('#duracion').text('Duración : ' + data[altAtribute]['Runtime']);
           $('#director').text('Director : ' + data[altAtribute]['Director']);
           $('#actor').text('Actores : ' + data[altAtribute]['Actors']);
+          $('#nuevo').text(data[altAtribute]['Poster']);
         });
       });
     } else {
@@ -101,9 +109,21 @@ $(document).ready(function() {
           $('#duracion').text('Duración : ' + data[altAtribute]['Runtime']);
           $('#director').text('Director : ' + data[altAtribute]['Director']);
           $('#actor').text('Actores : ' + data[altAtribute]['Actors']);
+          $('#nuevo').text(data[altAtribute]['Poster']);
         });
       });
     }
   }
+ 
+  var lis = 1;
+  $('#anadir-lista').click(function() {
+    dbRefUsu.child('lista/' + lis).set({
+      poster: $('#nuevo').text(),
+      title: $('#titulo-peli').text(),
+      year: $('#ano').text()
+    });
+    lis = lis + 1;
+    console.log(lis);
+  });
 });
 

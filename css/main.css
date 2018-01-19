@@ -153,3 +153,7 @@
     color: #1da1f2;
     text-align: center;
 }
+
+.none {
+    display: none;
+}
