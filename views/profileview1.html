@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marvel Fans</title>
+  <!--Añadiendo color a la barra de navegador que se verá desde versión mobile-->
+  <meta name="theme-color" content="#3eb060"/>
+  <link rel="icon" type="image/png" href="../assets/img/logomodel.png">
+  <!--Import fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main-m.css">
+</head>
+<body>
+  <header class="navbar-fixed-top">
+    <div class="container-fluid color-header">
+      <div class="row">
+        <div class="col-xs-12 flex">
+         <figure class="figure-logo"><a href=""><img class="img-responsive" src="../assets/img/logomodel.png" alt="model"></a></figure>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav nav-tabs navbar-inverse">
+        <li role="presentation" class="dropdown">
+          <a id="username"class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+             <p class="inline-block">Usuario</p><span class="caret"></span>
+          </a>
+          <!-- lista desplegable-->
+          <ul class="dropdown-menu list-dropdown">
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+       </li>
+       <li><a href="#">Noticias Top</a></li>
+       <li><a href="#">Calendario</a></li>
+     </ul>
+    </nav>
+  </header>
+  <section class="first-section-profile">
+    <div class="container-fluid">
+      <div class="row flex">
+        <div class="col-xs-12 div-awards">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <figure class="col-xs-5"><img id="img-profile" src="../assets/img/usuariomodel.png" alt="" class="img-responsive img-circle"></figure>
+          <div class="user col-xs-7">
+            <br>
+            <br>
+            <li class="list-unstyled text-center col-xs-12" id="username-home"><span><strong>Nombre de usuario</strong></span></li>
+            <li class="list-unstyled text-center col-xs-12" id="email-home"><h6><strong>Correo</strong></h6></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="second-section-list">
+    <div class="container color">
+      <div class="row flex">
+        <div class="col-xs-11 div-list">
+          <div id="your-list" class="col-xs-8 list-name" contenteditable = 'false'><strong>TU LISTA</strong></div>
+          <div class="col-xs-4 text-right"><button id="button-edit" type="button" class="btn  btn-editar btn-primary btn-sm">Editar</button></div>
+          <!-- DIV CONTAINER LIST-->
+          <div id="content-list"class="content-list col-xs-12">
+            <!-- Aqui va las listas-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="third-section-ratings">
+    <div class="container-fluid color">
+      <div class="row flex">
+        <div id="ratings" class="col-xs-11 div-ratings">
+          <div class="text-center"><strong>Tus calificaciones y comentarios</strong></div>
+          <div id="ratings-child"class="hidden">
+            <p class="text-center"><strong>TUS CALIFICACIONES Y COMENTARIOS</strong></p>
+
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Vínculo de archivos js-->
+  <script type="text/javascript" src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="../js/profileView.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDlW74xczq0NNrtQ98_BNn0ZOzSa2laql4",
+    authDomain: "marvel-fans.firebaseapp.com",
+    databaseURL: "https://marvel-fans.firebaseio.com",
+    projectId: "marvel-fans",
+    storageBucket: "marvel-fans.appspot.com",
+    messagingSenderId: "369036190237"
+  };
+  firebase.initializeApp(config);
+  </script>
+</body>
+</html>
