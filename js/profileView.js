@@ -145,4 +145,9 @@ $(document).ready(function() {
       $('#ratings-child').append('<div class ="container content-ratings"><figure class="col-xs-3"><img width="50px" height ="60px" class= "img-responsive" src="' + listaUno.poster + '" alt=""></figure><p class="col-xs-9 title-ratings "><strong>' + listaUno.title + '  (' + listaUno.year + ')' + '</strong><p   class="col-xs-9"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span>' + listaUno.ratings + '</span></p><p class=" coment plot col-xs-12">' + 'Hey!! Este es un regreso a la forma de Marvel, presentando un nuevo héroe que estoy feliz de ver de nuevo, oh!!' + '</p></div>');
     });
   });
+  // Redireccion de vistas
+    $('#usuario-nav').on('click', function(){
+      window.location.href = '../index.html';
+    })
+    
 });
