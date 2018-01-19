@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/main-m.css">
 </head>
 <body>
-  <header class="navbar-fi">
+  <header class="navbar-fixed-top">
     <div class="container-fluid color-header">
       <div class="row">
         <div class="col-xs-12 flex">
@@ -42,9 +42,7 @@
   <section class="first-section-profile">
     <div class="container-fluid">
       <div class="row flex">
-        <div class="col-xs-offset-9 col-xs-3 div-awards">
-          <img src="../assets/img/medalla1.jpg" alt="" class="img-reponive col-xs-6 img-circle">
-          <img src="../assets/img/medalla2.jpg" alt="" class="img-responsive col-xs-6 img-circle">
+        <div class="col-xs-12 div-awards">
         </div>
       </div>
       <div class="row">
@@ -64,15 +62,11 @@
     <div class="container color">
       <div class="row flex">
         <div class="col-xs-11 div-list">
-          <div id="your-list" class="col-xs-8 list-group-item tittle-list" contenteditable = 'false'><strong>TU LISTA</strong></div>
-          <div class="col-xs-4"><button id="button-edit" type="button" class="btn btn-editar btn-primary">Editar</button></div>
+          <div id="your-list" class="col-xs-8 list-name" contenteditable = 'false'><strong>TU LISTA</strong></div>
+          <div class="col-xs-4 text-right"><button id="button-edit" type="button" class="btn  btn-editar btn-primary btn-sm">Editar</button></div>
           <!-- DIV CONTAINER LIST-->
           <div id="content-list"class="content-list col-xs-12">
-            <div class="list row">
-              <p class="col-xs-6">Tittle</p>
-              <p class="col-xs-6 text-right"><button class="btn btn-editar btn-xs"><span class="glyphicon glyphicon-trash"aria-hidden="true"></span></button><button type="button" class="btn btn-primary btn-color btn-xs">Visto</button></p>
-              <figure class="col-xs-12"><img src="" alt=""></figure>
-            </div>
+            <!-- Aqui va las listas-->
           </div>
         </div>
       </div>
@@ -81,23 +75,16 @@
   <section class="third-section-ratings">
     <div class="container-fluid color">
       <div class="row flex">
-        <div class="col-xs-11 div-ratings">
+        <div id="ratings" class="col-xs-11 div-ratings">
           <div class="text-center"><strong>Tus calificaciones y comentarios</strong></div>
-          <div class="hidden">
+          <div id="ratings-child"class="hidden">
             <p class="text-center"><strong>TUS CALIFICACIONES Y COMENTARIOS</strong></p>
-              <div class="content-ratings">
-                <img src="" alt="">
-                <p class="col-xs-8"><strong>TíTULO (AÑO)</strong></p>
-                <div class="col-xs-4"><h6>Calificacion</h6><p>Estrellita</p></div>
-                <p class="col-xs-12">Comentarios hechos</p>
-             </div>
+
            </div>
         </div>
       </div>
     </div>
   </section>
-
-
   <!-- Vínculo de archivos js-->
   <script type="text/javascript" src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"> </script>
