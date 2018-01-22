@@ -85,45 +85,7 @@ $(document).ready(function() {
       $('#list').remove();
     });
   });
-  // ------ Fin de agregar listaDos------------
-  // ListaTres
-  // AÑADE listaUno  a la vista PERFIL de Max
-  firebase.database().ref('usuarios/' + localStorage.userUid + '/lista/6' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).on('value', function(snapshot) {
-    var lista1 = snapshot.val();
-    console.log(snapshot);
-    console.log(lista6);
-    // AÑADIR LISTA
-    $('#content-list').append('<div  id = "list6" class="list container-fluid"><div class = "row"><p class="col-xs-6 title-list">' + lista6.title + '  (' + lista6.year + ')' + '</p><p class="col-xs-6 text-right"><button id = "btn-remove2" class="btn btn-eliminar btn-xs"><span class="glyphicon glyphicon-trash"aria-hidden="true"></span></button><button type="button" id = "btn-estado3" class="btn btn-primary btn-color btn-xs">' + 'Pendiente' + '</button></p></div><div class = "row"><figure class="col-xs-4"><img width = "105px" height = "90px" class= "img-responsive" src="' + lista6.poster + '" alt=""></figure><p class="col-xs-8 plot">' + lista6.plot + '</p></div></div>');
-    // CAmbiar el botón de visto a pendiente y viceversa
-    console.log($('#btn-estado3'));
-    var $buttonEstado = $('#btn-estado3');
-    var $buttonRemove = $('#btn-remove2');
-    $buttonEstado.on('click', function() {
-      if ($buttonEstado.text() === 'Pendiente') {
-        $buttonEstado.text('Visto');
-        console.log($buttonEstado.text());
-        // Guardar en firebase
-        firebase.database().ref('usuarios/' + localStorage.userUid + '/lista/6' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).update({
-          Estado: $buttonEstado.text(),
-        });
-      } else {
-        $buttonEstado.text('Pendiente');
-        firebase.database().ref('usuarios/' + localStorage.userUid + '/lista/6' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).update({
-          Estado: $buttonEstado.text(),
-        });
-      }
-    });
-    // Extraer la información del estado del buttonEstado
-    firebase.database().ref('usuarios/' + localStorage.userUid + '/lista/6' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).on('value', function(snapshot) {
-      var lista1 = snapshot.val();
-      $buttonEstado.text(lista6.Estado);
-    });
-    // Eliminar
-    $buttonRemove.on('click', function() {
-      $('#list6').remove();
-      // firebase.database().ref('usuarios/shCJTaLhHQWpO9PDXKqqeqc5ZkC3/listaUno' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).remove();
-    });
-  });
+  // ------ Fin de agregar lista4------------
   // EVENTO CLICK para editar nombre de lista
   $buttonEdit.on('click', function() {
     $nameList.attr('contenteditable', true);
