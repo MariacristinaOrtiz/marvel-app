@@ -117,6 +117,13 @@ $(document).ready(function() {
  
   var lis = 1;
   $('#anadir-lista').click(function() {
+    // console.log()
+    firebase.database().ref('/lista/').once('value').then(function(snapshot) {
+      console.log(snapshot);
+      var ListaArray = snapshot.val();
+      // var keys = Object.keys(ListaArray);
+      console.log(ListaArray);
+    });
     dbRefUsu.child('lista/' + lis).set({
       poster: $('#nuevo').text(),
       title: $('#titulo-peli').text(),
