@@ -11,7 +11,7 @@ $(document).ready(function() {
   firebase.initializeApp(config);
 
   var dbRef = firebase.database().ref('usuarios');
-  var dbRefUsu = dbRef.child('shCJTaLhHQWpO9PDXKqqeqc5ZkC3');
+  var dbRefUsu = dbRef.child(localStorage.userUid);
   dbRefUsu.on('value', function(snap) {
     // console.log(snap.val()['nombre']);
     $('#usuario').text(snap.val()['nombre']);
