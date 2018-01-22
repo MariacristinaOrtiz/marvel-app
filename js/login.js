@@ -1,36 +1,16 @@
 $(document).ready(function () {
   //funcionalidades para index.html
   var $item = $('.carousel .item');
-  var $wHeight = $(window).height();
-  $item.height($wHeight);
-  $item.addClass('full-screen');
 
-  $('.carousel img').each(function () {
-    var $src = $(this).attr('src');
-    $(this).parent().css({
-      'background-image': 'url(' + $src + ')',
-    });
-    $(this).remove();
-  });
-
-  $(window).on('resize', function () {
-    $wHeight = $(window).height();
-    $item.height($wHeight);
-  });
-
-  $('.carousel').carousel({
-    interval: 5000,
-    pause: "false"
-  });
-
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-  })
+  $.support.transition = false;
 
   var provider = new firebase.auth.GoogleAuthProvider();
   $('#login').click(function () {
     firebase.auth().signInWithPopup(provider).then(function (result) {
       console.log(result.user);
+      var user=result.user;
+      localStorage.userUid=user.uid;
+      console.log(user.uid);
       guardarDatos(result.user);
       setTimeout(function() {
         window.location.href = 'home.html';
@@ -43,9 +23,9 @@ $(document).ready(function () {
       uid: user.uid,
       nombre: user.displayName,
       email: user.email,
-      foto: user.photoURL,
+      foto: user.photoURL
     }
-    firebase.database().ref('usuarios/' + user.uid).set(usuario);
+    firebase.database().ref('usuarios/' + user.uid).update(usuario);
     console.log(user.uid);
   }
 
