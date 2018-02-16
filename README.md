@@ -1,4 +1,4 @@
-# Proyecto: Marvel Fans
+# Marvel Fans
 MARVEL FANS es un espacio virtual dedicado a los fans de las películas de Marvel, donde pueden encontrar toda la información relacionada a cada película, armar su propia colección de películas vista o pendientes, tener un calendario de eventos y ver las ultimas noticias.
 
 ![red-social-serendepia](https://user-images.githubusercontent.com/32300384/36300366-165d5ca0-12cf-11e8-96e5-6df728caddb7.png)
