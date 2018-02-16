@@ -1,44 +1,71 @@
 # Proyecto: Marvel Fans
+MARVEL FANS es un espacio virtual dedicado a los fans de las películas de Marvel, donde pueden encontrar toda la información relacionada a cada película, armar su propia colección de películas vista o pendientes, tener un calendario de eventos y ver las ultimas noticias.
+
+![red-social-serendepia](https://user-images.githubusercontent.com/32300384/36300366-165d5ca0-12cf-11e8-96e5-6df728caddb7.png)
+
+## Desarrollado para
+[Laboratoria](http://laboratoria.la)
+***
+# PROYECTO: MARVEL-FANS
 
 ## Participantes:
 - Nataly Cortez
 - Elena Japa
 - Maria Cristina Ortiz
 - Pamela Rojas
+***
 
 ## Descripción:
 
-Un espacio virtual dedicado a los fans de las películas de Marvel, donde puedan encontrar toda la información relacionada a cada película, armar su propia colección de películas por ver y compartir sus opiniones con toda la comunidad.
+MARVEL FANS es un espacio virtual(web-app) dedicado a los fans de las películas de Marvel, donde pueden encontrar toda la información relacionada a cada película, armar su propia colección de películas vista o pendientes, tener un calendario de eventos y ver las ultimas noticias.
+***
 
-## ¿Cómo llegamos a esta idea?
+## Planificación
+Se uso la herramienta TRELLO para la organizació de las actividades.
 
-![Encuesta](assets/img/val1.jpg)
+[Trello](https://trello.com/b/SIMvzP2T/marvel-fans)
+***
+## PROCESO DE DESARROLLO
+## A.- RESEARCH
 
-![Encuesta](assets/img/val2.jpg)
+### Descubrimiento e investigación: ¿Cómo llegamos a esta idea?
+Por medio de un brainstorming se eligió 2 ideas: Marvel y DC
 
-## Elección: Marvel
+![Encuesta](assets/images/val1.jpg)
 
-![Encuesta](assets/img/marvel-peru.jpg)
+![Encuesta](assets/images/val2.jpg)
 
-![Encuesta](assets/img/dc-peru.jpg)
+### Síntesis y definición: Elección: Marvel
+La elección de Marvel se validó por la cantidad de seguidores( fans) en facebook, en este caso Marvel tenía más cantidad de seguidores.
 
-## Research:
+![Encuesta](assets/images/marvel-peru.jpg)
+
+![Encuesta](assets/images/dc-peru.jpg)
+
+### Descubrimiento e investigación ¿Qué es lo que tendrá nuestro espacio virtual?
+Se hizo un encuesta online para definir las componentes y funcionalidades que tendría el espacio virtual.
+
 - Público-meta: Integrantes del club de fans de Marvel en Facebook
 - Recurso Utilizado: OnlineEncuesta
 - Número de encuestados: 18
 
-![Encuesta](assets/img/marvelcuesta.png)
+![Encuesta](assets/images/marvelcuesta.png)
 
-## Objetivos:
+### Síntesis y definición: Componentes y funcionalidades
+A partir de la encuesta realizada se sintetizó la información y se obtuvieron  los componentes y funcionalidades:
+
 - Registro/Sign in/Log in
 - Perfil de usuario
 - Búsqueda por filtros
-- Amigos/Seguidores
-- Chat Grupal
+- Amigos/Seguidores (pendiente)
+- Chat Grupal (pendiente)
 - Sección de Noticias
 - Calendario
 
-## Herramientas a utilizar:
+## B.- PROTOTIPO
+
+***
+## Herramientas de programación
 - HTML5
 - Jquery
 - Bootstrap
@@ -46,9 +73,3 @@ Un espacio virtual dedicado a los fans de las películas de Marvel, donde puedan
 - CSS3
 - Firebase
 - OMDb API
-
-## Organización:
-
-Link de Trello: https://trello.com/b/SIMvzP2T/tema
-
-![Encuesta](assets/img/trello.png)

@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $nameList = $('#your-list');
   $buttonEdit = $('#button-edit');
-  firebase.database().ref('usuarios/shCJTaLhHQWpO9PDXKqqeqc5ZkC3' /* + localStorage.userUid*/).on('value', function(snapshot) {
+  firebase.database().ref('usuarios/' + localStorage.userUid).on('value', function(snapshot) {
     var user = snapshot.val();
     $('#username p:first-child').hide();
     $('#username').prepend('<p class="visible-xs-inline-block">' + user.nombre + '</p>');
@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('#email-home h6:first-child').text(user.email);
     $('#img-profile').attr('src', user.foto);
   });
-  // AÑADE lista2  a la vista PERFIL de Max
+  // AÑADE lista2  a la vista PERFIL
   firebase.database().ref('usuarios/' + localStorage.userUid + '/lista/2').on('value', function(snapshot) {
     var lista2 = snapshot.val();
     // AÑADIR LISTA
@@ -42,7 +42,7 @@ $(document).ready(function() {
       // firebase.database().ref('usuarios/shCJTaLhHQWpO9PDXKqqeqc5ZkC3/listaUno' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).remove();
     });
   });
-  // AÑADE lista4  a la vista PERFIL de Max
+  // AÑADE lista4  a la vista PERFIL 
   firebase.database().ref('usuarios/' + localStorage.userUid + '/lista/4' /* + localStorage.userUid '/' + localStorage.user.listaUno*/).on('value', function(snapshot) {
     var lista4 = snapshot.val();
     // AÑADIR LISTA
